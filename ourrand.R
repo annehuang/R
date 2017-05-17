@@ -1,3 +1,6 @@
+# Anne Huang
+# This was originally written for our CS 502 Computational Biology Project at the University of Illinois at Chicago, for the spring of 2017.
+
 sink("rand.txt", append=FALSE, split=FALSE)
 
 library("igraph")

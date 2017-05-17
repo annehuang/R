@@ -1,3 +1,5 @@
+# This was used to process the data for our CS 502 Computational Biology Project at the University of Illinois at Chicago, for the spring of 2017.
+
 sink("ttests.txt", append=FALSE, split=FALSE)
 for (channel in c("FCz", "Fz", "T7", "T8", "FC2", "FC6", "Iz", "P7")){
 	for (task in c("M", "R", "N")){ 

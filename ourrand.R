@@ -1,5 +1,4 @@
-# Anne Huang
-# This was originally written for our CS 502 Computational Biology Project at the University of Illinois at Chicago, for the spring of 2017.
+# This was used to process the data for our CS 502 Computational Biology Project at the University of Illinois at Chicago, for the spring of 2017.
 
 sink("rand.txt", append=FALSE, split=FALSE)
 

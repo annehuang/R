@@ -10,6 +10,8 @@ for (task in c("M", "R", "N")){
 	for (subject in c("HC", "DZ")){
 		#http://stackoverflow.com/questions/14420936/error-in-filefile-rt-invalid-description-argument-in-complete-cases-pro
 		path <- paste(task, subject, sep="")
+		
+		#This takes as the parameter the name of the file.
 		df<-read.csv(paste("C:/", path, ".csv", sep=""))
 
 		#http://stackoverflow.com/questions/13706188/importing-csv-file-into-r-numeric-values-read-as-characters

@@ -7,6 +7,7 @@ for (channel in c("FCz", "Fz", "T7", "T8", "FC2", "FC6", "Iz", "P7")){
 		#http://stackoverflow.com/questions/14420936/error-in-filefile-rt-invalid-description-argument-in-complete-cases-pro
 		path<-paste("C:", "/", task, channel, ".csv", sep="")
 		df<-read.csv(path, header= TRUE)
+		# compares difference in means between these two vectors
 		ttest<-t.test(df['DZ'], df['HC'])
 		print(ttest)
 	}

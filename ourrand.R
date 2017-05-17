@@ -16,7 +16,10 @@ for (task in c("M", "R", "N")){
 		#http://stackoverflow.com/questions/13706188/importing-csv-file-into-r-numeric-values-read-as-characters
 
 		num_data<-data.frame(data.matrix(df))
-		#as.numeric converts each entry in num_data into numeric
+		
+		#sapply accepts a list and a function. It applies the function to every entry in the list (here, num_data).
+		#Here, the function is defined in the call to sapply.
+		#as.numeric converts the entry into numeric
 		numeric_columns <- sapply(num_data,function(x){as.numeric(x)})
 
 		#http://stackoverflow.com/questions/7615450/getting-a-row-from-a-data-frame-as-a-vector-in-r

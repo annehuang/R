@@ -5,7 +5,7 @@ sink("rand.txt", append=FALSE, split=FALSE)
 
 library("igraph")
 
-#c combines these items into a list
+#c combines these items into a list or vector
 for (task in c("M", "R", "N")){
 	for (subject in c("HC", "DZ")){
 		#http://stackoverflow.com/questions/14420936/error-in-filefile-rt-invalid-description-argument-in-complete-cases-pro

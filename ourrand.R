@@ -8,6 +8,7 @@ library("igraph")
 #c combines these items into a list
 for (task in c("M", "R", "N")){
 	for (subject in c("HC", "DZ")){
+		#http://stackoverflow.com/questions/14420936/error-in-filefile-rt-invalid-description-argument-in-complete-cases-pro
 		path <- paste(task, subject, sep="")
 		df<-read.csv(paste("C:/", path, ".csv", sep=""))
 
